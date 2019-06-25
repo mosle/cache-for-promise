@@ -29,9 +29,9 @@ cfp.exec("cache-key-1",arg).then(result=>{
 })
 //"any promise function is called" is output
 
-arg = 2;
+
 cfp.exec("cache-key-1",arg).then(result=>{
-    console.log(result);//2
+    console.log(result);//1
 })
 //key is same and cache is not expired, so "any promise function is called" is not output.
 
